@@ -1,7 +1,7 @@
 <template>
   <div class="menu">
     <div class="menu-left">
-      <div class="img-title side-bg">123</div>
+      <div class="img-title side-bg">Arumixn's Resume</div>
     </div>
     <div class="menu-right">
       <button class="nav-toggle" @click="RwdMenu" :class="{show: MenuToggle}">
@@ -15,7 +15,7 @@
         <router-link to="/home"><span @click="RwdMenu">Home</span></router-link>
         <router-link to="/about"><span @click="RwdMenu">About</span></router-link>
         <router-link to="/booking"><span @click="RwdMenu">Resume</span></router-link>
-        <router-link to="/courses"><span @click="RwdMenu">Portfoilo</span></router-link>
+        <router-link to="/portfolios"><span @click="RwdMenu">Portfoilo</span></router-link>
       </div>
     </div>
   </div>
@@ -36,6 +36,10 @@ export default {
 </script>
 
 <style scoped>
+.img-title {
+  color: white;
+  font-weight: 600;
+}
 .overlay {
   height: 100vh;
   width: 100%;

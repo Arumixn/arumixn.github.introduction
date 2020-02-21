@@ -4,10 +4,10 @@ import VueRouter from 'vue-router';
 import App from './App.vue';
 import Home from './Home.vue';
 import About from './About.vue';
-import Courses from './Courses.vue';
+import Portfolios from './Portfolios.vue';
 import Booking from './Booking.vue';
-import CourseList from './CourseList';
-import CourseDetail from './CourseDetail';
+import PortfolioList from './PortfolioList';
+import PortfolioDetail from './PortfolioDetail';
 
 Vue.use(VueRouter);
 
@@ -21,14 +21,14 @@ export default new VueRouter({
         { path: 'about', component: About},
         { path: 'booking', component: Booking},
         {
-          path: 'courses',
-          component: Courses,
+          path: 'portfolios',
+          component: Portfolios,
           children: [
-            {path: '', component: CourseList},
-            {path: ':id', component: CourseDetail},
+            {path: '', component: PortfolioList},
+            {path: ':id', component: PortfolioDetail},
           ],
         },
-        { path:'*', redirect:'courses' },
+        { path:'*', redirect:'portfolios' },
       ],
     }
   ],
