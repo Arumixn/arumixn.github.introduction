@@ -5,7 +5,7 @@ import App from './App.vue';
 import Home from './Home.vue';
 import About from './About.vue';
 import Portfolios from './Portfolios.vue';
-import Booking from './Booking.vue';
+import Resume from './Resume.vue';
 import PortfolioList from './PortfolioList';
 import PortfolioDetail from './PortfolioDetail';
 
@@ -19,7 +19,7 @@ export default new VueRouter({
       children: [
         { path: 'home', component: Home},
         { path: 'about', component: About},
-        { path: 'booking', component: Booking},
+        { path: 'resume', component: Resume},
         {
           path: 'portfolios',
           component: Portfolios,

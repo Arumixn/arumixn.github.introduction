@@ -14,7 +14,7 @@
       <div class="sub-menu" :class="{show: MenuToggle}">
         <router-link to="/home"><span @click="RwdMenu">Home</span></router-link>
         <router-link to="/about"><span @click="RwdMenu">About</span></router-link>
-        <router-link to="/booking"><span @click="RwdMenu">Resume</span></router-link>
+        <router-link to="/resume"><span @click="RwdMenu">Resume</span></router-link>
         <router-link to="/portfolios"><span @click="RwdMenu">Portfoilo</span></router-link>
       </div>
     </div>
